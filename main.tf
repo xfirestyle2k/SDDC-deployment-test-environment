@@ -20,9 +20,9 @@ resource "vmc_sddc" "sddc_3" {
   vpc_cidr            = var.sddc_mgmt_subnet
   num_host            = var.sddc_num_hosts
   provider_type       = var.provider_type
-  region              = data.vmc_customer_subnets.my_subnets.region
+  region              = var.sddc_region
   vxlan_subnet        = var.sddc_client_net
-  delay_account_link  = false
+  delay_account_link  = true
   skip_creating_vxlan = false
   sso_domain          = "vmc.local"
   sddc_type           = var.sddc_type
