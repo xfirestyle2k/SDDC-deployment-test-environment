@@ -12,7 +12,7 @@ variable "aws_account_number" {
 
 variable "sddc_name"{
   description = "Name of SDDC."
-  default     = "vMUG-NSX-Terraform"
+  default     = "Thomas-Test"
 }
 
 variable "sddc_region" {
@@ -42,7 +42,7 @@ variable sddc_num_hosts {
 
 variable provider_type {
   description = "Determines what additional properties are available based on cloud provider. Default value : AWS"
-  default     = "AWS"
+  default = "AWS"
 }
 
 variable sddc_type {
