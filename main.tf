@@ -15,7 +15,7 @@ data "vmc_customer_subnets" "my_subnets" {
   region               = replace(upper(var.sddc_region), "-", "_")
 }
 
-resource "vmc_sddc" "sddc_3" {
+resource "vmc_sddc" "sddc_2" {
   sddc_name           = var.sddc_name
   vpc_cidr            = var.sddc_mgmt_subnet
   num_host            = var.sddc_num_hosts

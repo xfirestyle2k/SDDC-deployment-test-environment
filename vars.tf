@@ -12,7 +12,7 @@ variable "aws_account_number" {
 
 variable "sddc_name"{
   description = "Name of SDDC."
-  default     = "Thomas-Test"
+  default     = "Thomas-SDDC"
 }
 
 variable "sddc_region" {
@@ -42,7 +42,7 @@ variable sddc_num_hosts {
 
 variable provider_type {
   description = "Determines what additional properties are available based on cloud provider. Default value : AWS"
-  default = "AWS"
+  default = "ZEROCLOUD"
 }
 
 variable sddc_type {
