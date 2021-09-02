@@ -2,9 +2,6 @@ provider "vmc" {
   refresh_token = var.API_token
   org_id = var.org_id
 }
-# Empty data source defined in order to store the org display name and name in terraform state
-data "vmc_org" "my_org" {
-}
 
 data "vmc_connected_accounts" "my_accounts" {
   account_number = var.aws_account_number
