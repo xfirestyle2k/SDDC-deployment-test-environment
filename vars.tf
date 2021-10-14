@@ -12,12 +12,12 @@ variable "aws_account_number" {
 
 variable "sddc_name"{
   description = "Name of SDDC."
-  default     = "Thomas-SDDC"
+  default     = "SDDC-Test"
 }
 
 variable "sddc_region" {
   description = "The AWS  or VMC specific region."
-  default     = "eu-west-2"
+  default     = "us-west-2"
 }
 
 variable "sddc_mgmt_subnet" {
@@ -42,7 +42,7 @@ variable sddc_num_hosts {
 
 variable provider_type {
   description = "Determines what additional properties are available based on cloud provider. Default value : AWS"
-  default = "ZEROCLOUD"
+  default = "AWS"
 }
 
 variable sddc_type {
