@@ -12,7 +12,7 @@ variable "aws_account_number" {
 
 variable "sddc_name"{
   description = "Name of SDDC."
-  default     = "SDDC-Test"
+  default     = "Thomas-Terraform_ZERO"
 }
 
 variable "sddc_region" {
@@ -42,7 +42,7 @@ variable sddc_num_hosts {
 
 variable provider_type {
   description = "Determines what additional properties are available based on cloud provider. Default value : AWS"
-  default = "AWS"
+  default = "ZEROCLOUD"
 }
 
 variable sddc_type {
@@ -52,7 +52,7 @@ variable sddc_type {
 
 variable size {
   description = "The size of the vCenter and NSX appliances. 'large' or 'LARGE' SDDC size corresponds to a large vCenter appliance and large NSX appliance. 'medium' or 'MEDIUM' SDDC size corresponds to medium vCenter appliance and medium NSX appliance. Default : 'medium'."
-  default     = "medium" 
+  default     = "medium"
 }
 
 variable deployment_type {
